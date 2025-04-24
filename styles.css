@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --color-primary: #123524;
+        --color-secondary: #f6f2e6;
+        --color-accent: #7f2a3c;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Tilt Prism', cursive;
+    }
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+}
+
+@layer utilities {
+    .text-primary {
+        color: #123524;
+    }
+
+    .bg-primary {
+        background-color: #123524 !important;
+    }
+
+    .text-secondary {
+        color: #f6f2e6;
+    }
+
+    .bg-secondary {
+        background-color: #f6f2e6;
+    }
+
+    .text-accent {
+        color: #7f2a3c;
+    }
+
+    .bg-accent {
+        background-color: #7f2a3c;
+    }
+}
+
+/* Simple Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.banner-content {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Section Animation */
+.section-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Feature Card Styles */
+.feature-card {
+    background: #7f2a3c;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    background: #6a2332;
+}
+
+.icon-circle-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.icon-circle {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3 {
+    color: white;
+    font-weight: 300;
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+}
+
+.feature-card p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.feature-card a {
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.feature-card a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}

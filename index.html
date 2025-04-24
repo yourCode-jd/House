@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-secondary">
+    <!-- Header Section -->
+    <header class="fixed top-0 left-0 right-0 z-50 py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between bg-secondary rounded-full shadow-lg px-6 py-3">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-primary">Your Logo</a>
+                </div>
+
+                <!-- Navigation Links -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="text-primary hover:text-accent transition-colors duration-300">Home</a>
+                    <a href="#" class="text-primary hover:text-accent transition-colors duration-300">About Us</a>
+                    <a href="#" class="text-primary hover:text-accent transition-colors duration-300">Pricing</a>
+                    <a href="#" class="text-primary hover:text-accent transition-colors duration-300">Featured</a>
+                </nav>
+
+                <!-- Message Button -->
+                <div class="flex-shrink-0">
+                    <button class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        Send Message
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen w-full overflow-hidden">
+        <!-- Banner Image -->
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                 alt="Hero Banner" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative container mx-auto px-4 h-full flex items-center">
+            <div class="max-w-2xl banner-content">
+                <h1 class="text-6xl md:text-7xl font-normal text-white mb-6 leading-tight tracking-wide">
+                    Discover Your Dream Home
+                </h1>
+                <p class="text-xl text-white mb-8">
+                    Find the perfect property that matches your lifestyle and preferences.
+                </p>
+                <button class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                    Explore Properties
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="relative py-20 overflow-hidden section-animate">
+        <!-- Blurry Background Image -->
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                 alt="Background" 
+                 class="w-full h-full object-cover filter blur-2xl scale-110">
+            <div class="absolute inset-0 bg-black/20"></div>
+        </div>
+
+        <!-- Content Container -->
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="bg-secondary backdrop-blur-sm rounded-[3rem] p-12 shadow-2xl">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Left Content -->
+                    <div class="space-y-6">
+                        <h2 class="text-4xl md:text-5xl font-normal text-primary mb-6">
+                            About Our Real Estate Vision
+                        </h2>
+                        <p class="text-lg text-primary mb-8 leading-relaxed">
+                            We believe in creating more than just houses - we build communities and dreams. Our mission is to help you find not just a property, but a place where memories are made and futures are built.
+                        </p>
+                        <p class="text-lg text-primary mb-8 leading-relaxed">
+                            With over a decade of experience in the real estate market, we've mastered the art of matching people with their perfect homes. Our team of dedicated professionals works tirelessly to ensure your property journey is smooth and successful.
+                        </p>
+                        <button class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                            Learn More
+                        </button>
+                    </div>
+
+                    <!-- Right Image -->
+                    <div class="flex justify-end">
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                                 alt="About Us" 
+                                 class="w-full h-[500px] object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="relative py-20 overflow-hidden">
+        <!-- Blurry Background Image -->
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                 alt="Background" 
+                 class="w-full h-full object-cover filter blur-2xl scale-110">
+            <div class="absolute inset-0 bg-black/20"></div>
+        </div>
+
+        <!-- Content Container -->
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="bg-secondary backdrop-blur-sm rounded-[3rem] p-12 shadow-2xl">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
+                    <div>
+                        <h2 class="text-4xl md:text-5xl font-normal text-primary mb-6">
+                            Why Choose Our Real Estate Services
+                        </h2>
+                    </div>
+                    <div>
+                        <p class="text-lg text-primary/80 leading-relaxed">
+                            Discover the unique advantages that set us apart in the real estate market. Our commitment to excellence and innovative approach ensures you get the best service possible. We combine years of experience with cutting-edge technology to provide you with a seamless property journey.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+                    <!-- Feature Card 1 -->
+                    <div class="feature-card">
+                        <div class="icon-circle-wrapper">
+                            <div class="icon-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-light mb-3">Premium Properties</h3>
+                        <p class="text-primary/80 mb-4">Access exclusive listings of high-end properties in prime locations.</p>
+                        <a href="#" class="text-accent hover:text-accent/80">Learn More</a>
+                    </div>
+
+                    <!-- Feature Card 2 -->
+                    <div class="feature-card">
+                        <div class="icon-circle-wrapper">
+                            <div class="icon-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-light mb-3">24/7 Support</h3>
+                        <p class="text-primary/80 mb-4">Round-the-clock assistance for all your real estate needs.</p>
+                        <a href="#" class="text-accent hover:text-accent/80">Learn More</a>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="feature-card">
+                        <div class="icon-circle-wrapper">
+                            <div class="icon-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-light mb-3">Secure Transactions</h3>
+                        <p class="text-primary/80 mb-4">Safe and transparent property transactions with legal expertise.</p>
+                        <a href="#" class="text-accent hover:text-accent/80">Learn More</a>
+                    </div>
+
+                    <!-- Feature Card 4 -->
+                    <div class="feature-card">
+                        <div class="icon-circle-wrapper">
+                            <div class="icon-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-light mb-3">Expert Team</h3>
+                        <p class="text-primary/80 mb-4">Professional agents with extensive market knowledge.</p>
+                        <a href="#" class="text-accent hover:text-accent/80">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <!-- Content will be added later -->
+    </main>
+
+    <script>
+        // Function to check if element is in viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.bottom >= 0
+            );
+        }
+
+        // Function to handle scroll animations
+        function handleScrollAnimations() {
+            const sections = document.querySelectorAll('.section-animate');
+            const cards = document.querySelectorAll('.feature-card');
+
+            sections.forEach(section => {
+                if (isInViewport(section)) {
+                    section.classList.add('visible');
+                }
+            });
+
+            cards.forEach((card, index) => {
+                if (isInViewport(card)) {
+                    setTimeout(() => {
+                        card.classList.add('visible');
+                    }, index * 100); // Stagger the animations
+                }
+            });
+        }
+
+        // Initial check
+        handleScrollAnimations();
+
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScrollAnimations);
+    </script>
+</body>
+</html> 
